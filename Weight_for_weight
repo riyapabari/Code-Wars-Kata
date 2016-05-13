@@ -1,0 +1,3 @@
+def order_weight(strng)
+    strng.split(" ").sort_by {|x| [x.split("").map(&:to_i).reduce(:+), x]}.join(" ")
+end
